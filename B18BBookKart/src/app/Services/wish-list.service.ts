@@ -11,8 +11,5 @@ export class WishListService {
 
   getBooks(){
     return this.http.get('https://bookcart.azurewebsites.net/api/Wishlist/518')
-    .pipe(map((res: any) => {
-      return res;
-    }))
   }
 }
